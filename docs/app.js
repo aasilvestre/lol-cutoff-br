@@ -19,11 +19,6 @@ function fillCards(prefix, queueData) {
     queueData.grandmaster.cutoff_lp !== null ? `${queueData.grandmaster.cutoff_lp} LP` : "—";
   document.getElementById(`${prefix}-gm-meta`).textContent =
     `${queueData.grandmaster.player_count} jogadores`;
-
-  document.getElementById(`${prefix}-master-lp`).textContent =
-    queueData.master.cutoff_lp !== null ? `${queueData.master.cutoff_lp} LP` : "—";
-  document.getElementById(`${prefix}-master-meta`).textContent =
-    `${queueData.master.player_count} jogadores`;
 }
 
 function drawChart(canvasId, history, queueKey, titleSuffix) {
@@ -47,13 +42,6 @@ function drawChart(canvasId, history, queueKey, titleSuffix) {
           data: history.map((h) => h.queues[queueKey].grandmaster.cutoff_lp),
           borderColor: "#e5484d",
           backgroundColor: "#e5484d33",
-          tension: 0.25,
-        },
-        {
-          label: "Mestre (linha de corte)",
-          data: history.map((h) => h.queues[queueKey].master.cutoff_lp),
-          borderColor: "#a855f7",
-          backgroundColor: "#a855f733",
           tension: 0.25,
         },
       ],

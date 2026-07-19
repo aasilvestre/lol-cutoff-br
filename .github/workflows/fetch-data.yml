@@ -1,0 +1,41 @@
+name: Fetch LoL LP Cutoff (BR Flex)
+
+on:
+  schedule:
+    # 23:50 no horário de Brasília (UTC-3, sem horário de verão) = 02:50 UTC.
+    # Rodamos 5 min depois do reset (23:45) pra dar uma margem de segurança,
+    # já que o cron do GitHub Actions pode atrasar alguns minutos.
+    - cron: "50 2 * * *"
+  workflow_dispatch: {}   # permite rodar manualmente pela aba Actions
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Instalar dependências
+        run: pip install -r requirements.txt
+
+      - name: Buscar dados na Riot API
+        env:
+          RIOT_API_KEY: ${{ secrets.RIOT_API_KEY }}
+        run: python scripts/fetch_lp_cutoff.py
+
+      - name: Commit e push dos dados atualizados
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/data/
+          git diff --cached --quiet && echo "Nada novo para commitar" || \
+            git commit -m "chore: atualiza linha de corte $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push

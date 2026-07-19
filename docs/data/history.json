@@ -1,1 +1,43 @@
-[]
+[
+  {
+    "timestamp_utc": "2026-07-19T16:46:48.470466+00:00",
+    "timestamp_brt": "2026-07-19T13:46:48.470466-03:00",
+    "date_brt": "2026-07-19",
+    "queues": {
+      "solo": {
+        "challenger": {
+          "cutoff_lp": 316,
+          "top_lp": 3676,
+          "player_count": 203
+        },
+        "grandmaster": {
+          "cutoff_lp": 106,
+          "top_lp": 1869,
+          "player_count": 519
+        },
+        "master": {
+          "cutoff_lp": 0,
+          "top_lp": 1409,
+          "player_count": 8251
+        }
+      },
+      "flex": {
+        "challenger": {
+          "cutoff_lp": 883,
+          "top_lp": 2422,
+          "player_count": 200
+        },
+        "grandmaster": {
+          "cutoff_lp": 305,
+          "top_lp": 1072,
+          "player_count": 500
+        },
+        "master": {
+          "cutoff_lp": 0,
+          "top_lp": 449,
+          "player_count": 2563
+        }
+      }
+    }
+  }
+]

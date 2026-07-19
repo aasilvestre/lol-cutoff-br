@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Linha de Corte — Flex BR (Challenger / GM / Master)</title>
+<link rel="stylesheet" href="style.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Linha de Corte — Fila Flex BR</h1>
+    <p class="subtitle">Challenger · Grão-Mestre · Mestre — Solo/Duo e Flex — atualizado logo após o reset das 23h45 (horário de Brasília)</p>
+    <p id="last-update" class="last-update">Carregando...</p>
+  </header>
+
+  <main>
+    <section class="queue-block">
+      <h2 class="queue-title">Solo/Duo</h2>
+      <div class="cards" id="cards-solo">
+        <div class="card challenger">
+          <h3>Challenger</h3>
+          <p class="lp" id="solo-chall-lp">—</p>
+          <p class="meta" id="solo-chall-meta">—</p>
+        </div>
+        <div class="card grandmaster">
+          <h3>Grão-Mestre</h3>
+          <p class="lp" id="solo-gm-lp">—</p>
+          <p class="meta" id="solo-gm-meta">—</p>
+        </div>
+        <div class="card master">
+          <h3>Mestre</h3>
+          <p class="lp" id="solo-master-lp">—</p>
+          <p class="meta" id="solo-master-meta">—</p>
+        </div>
+      </div>
+      <div class="chart-container">
+        <canvas id="soloChart"></canvas>
+      </div>
+    </section>
+
+    <section class="queue-block">
+      <h2 class="queue-title">Flex 5x5</h2>
+      <div class="cards" id="cards-flex">
+        <div class="card challenger">
+          <h3>Challenger</h3>
+          <p class="lp" id="flex-chall-lp">—</p>
+          <p class="meta" id="flex-chall-meta">—</p>
+        </div>
+        <div class="card grandmaster">
+          <h3>Grão-Mestre</h3>
+          <p class="lp" id="flex-gm-lp">—</p>
+          <p class="meta" id="flex-gm-meta">—</p>
+        </div>
+        <div class="card master">
+          <h3>Mestre</h3>
+          <p class="lp" id="flex-master-lp">—</p>
+          <p class="meta" id="flex-master-meta">—</p>
+        </div>
+      </div>
+      <div class="chart-container">
+        <canvas id="flexChart"></canvas>
+      </div>
+    </section>
+
+    <p class="empty-state" id="empty-state" hidden>
+      Ainda não há dados no histórico. Depois que o workflow do GitHub Actions
+      rodar pela primeira vez, os gráficos aparecem aqui automaticamente.
+    </p>
+  </main>
+
+  <footer>
+    <p>Dados via Riot Games API (League-V4) · Servidor BR1 · Fila Flex 5x5</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

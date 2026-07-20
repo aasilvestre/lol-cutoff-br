@@ -1,57 +1,57 @@
 {
-  "timestamp_utc": "2026-07-20T03:00:14.762125+00:00",
-  "timestamp_brt": "2026-07-20T00:00:14.762125-03:00",
+  "timestamp_utc": "2026-07-20T05:56:00.244040+00:00",
+  "timestamp_brt": "2026-07-20T02:56:00.244040-03:00",
   "date_brt": "2026-07-20",
   "queues": {
     "solo": {
       "challenger": {
-        "cutoff_lp": 1803,
+        "cutoff_lp": 1833,
         "raw_min_lp": 241,
-        "top_lp": 3643,
+        "top_lp": 3572,
         "player_count": 203,
-        "clean_player_count": 200,
-        "floor_lp": 1802
+        "clean_player_count": 175,
+        "floor_lp": 1830
       },
       "grandmaster": {
-        "cutoff_lp": 1206,
+        "cutoff_lp": 1284,
         "raw_min_lp": 38,
-        "top_lp": 1802,
+        "top_lp": 1830,
         "player_count": 519,
-        "clean_player_count": 499,
-        "floor_lp": 1204
+        "clean_player_count": 385,
+        "floor_lp": 1283
       },
       "master": {
         "cutoff_lp": 0,
         "raw_min_lp": 0,
-        "top_lp": 1204,
-        "player_count": 8223,
-        "clean_player_count": 8223,
+        "top_lp": 1283,
+        "player_count": 8246,
+        "clean_player_count": 8246,
         "floor_lp": null
       }
     },
     "flex": {
       "challenger": {
-        "cutoff_lp": 991,
-        "raw_min_lp": 954,
+        "cutoff_lp": 980,
+        "raw_min_lp": 949,
         "top_lp": 2440,
         "player_count": 200,
-        "clean_player_count": 187,
-        "floor_lp": 989
+        "clean_player_count": 189,
+        "floor_lp": 975
       },
       "grandmaster": {
-        "cutoff_lp": 347,
+        "cutoff_lp": 387,
         "raw_min_lp": 347,
-        "top_lp": 989,
+        "top_lp": 975,
         "player_count": 500,
-        "clean_player_count": 500,
-        "floor_lp": 346
+        "clean_player_count": 428,
+        "floor_lp": 385
       },
       "master": {
         "cutoff_lp": 0,
         "raw_min_lp": 0,
-        "top_lp": 346,
-        "player_count": 2518,
-        "clean_player_count": 2518,
+        "top_lp": 385,
+        "player_count": 2534,
+        "clean_player_count": 2534,
         "floor_lp": null
       }
     }

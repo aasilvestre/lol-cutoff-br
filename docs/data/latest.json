@@ -1,31 +1,31 @@
 {
-  "timestamp_utc": "2026-07-19T17:06:27.871783+00:00",
-  "timestamp_brt": "2026-07-19T14:06:27.871783-03:00",
+  "timestamp_utc": "2026-07-20T02:52:57.929289+00:00",
+  "timestamp_brt": "2026-07-19T23:52:57.929289-03:00",
   "date_brt": "2026-07-19",
   "queues": {
     "solo": {
       "challenger": {
         "cutoff_lp": 1870,
-        "raw_min_lp": 316,
-        "top_lp": 3676,
+        "raw_min_lp": 241,
+        "top_lp": 3643,
         "player_count": 203,
-        "clean_player_count": 153,
+        "clean_player_count": 155,
         "floor_lp": 1869
       },
       "grandmaster": {
-        "cutoff_lp": 1411,
+        "cutoff_lp": 1436,
         "raw_min_lp": 106,
         "top_lp": 1869,
         "player_count": 519,
-        "clean_player_count": 227,
-        "floor_lp": 1409
+        "clean_player_count": 207,
+        "floor_lp": 1435
       },
       "master": {
         "cutoff_lp": 0,
         "raw_min_lp": 0,
-        "top_lp": 1409,
-        "player_count": 8255,
-        "clean_player_count": 8255,
+        "top_lp": 1435,
+        "player_count": 8348,
+        "clean_player_count": 8348,
         "floor_lp": null
       }
     },
@@ -33,25 +33,25 @@
       "challenger": {
         "cutoff_lp": 1074,
         "raw_min_lp": 883,
-        "top_lp": 2422,
+        "top_lp": 2440,
         "player_count": 200,
-        "clean_player_count": 142,
+        "clean_player_count": 138,
         "floor_lp": 1072
       },
       "grandmaster": {
-        "cutoff_lp": 451,
-        "raw_min_lp": 305,
+        "cutoff_lp": 347,
+        "raw_min_lp": 307,
         "top_lp": 1072,
         "player_count": 500,
-        "clean_player_count": 333,
-        "floor_lp": 449
+        "clean_player_count": 487,
+        "floor_lp": 346
       },
       "master": {
         "cutoff_lp": 0,
         "raw_min_lp": 0,
-        "top_lp": 449,
-        "player_count": 2563,
-        "clean_player_count": 2563,
+        "top_lp": 346,
+        "player_count": 2518,
+        "clean_player_count": 2518,
         "floor_lp": null
       }
     }

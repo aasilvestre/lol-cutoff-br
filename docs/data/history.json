@@ -57,5 +57,64 @@
         }
       }
     }
+  },
+  {
+    "timestamp_utc": "2026-07-21T05:37:34.892823+00:00",
+    "timestamp_brt": "2026-07-21T02:37:34.892823-03:00",
+    "date_brt": "2026-07-21",
+    "queues": {
+      "solo": {
+        "challenger": {
+          "cutoff_lp": 1858,
+          "raw_min_lp": 166,
+          "top_lp": 3592,
+          "player_count": 203,
+          "clean_player_count": 168,
+          "floor_lp": 1853
+        },
+        "grandmaster": {
+          "cutoff_lp": 1260,
+          "raw_min_lp": 72,
+          "top_lp": 1853,
+          "player_count": 519,
+          "clean_player_count": 415,
+          "floor_lp": 1259
+        },
+        "master": {
+          "cutoff_lp": 0,
+          "raw_min_lp": 0,
+          "top_lp": 1259,
+          "player_count": 8289,
+          "clean_player_count": 8289,
+          "floor_lp": null
+        }
+      },
+      "flex": {
+        "challenger": {
+          "cutoff_lp": 974,
+          "raw_min_lp": 967,
+          "top_lp": 2505,
+          "player_count": 200,
+          "clean_player_count": 197,
+          "floor_lp": 972
+        },
+        "grandmaster": {
+          "cutoff_lp": 411,
+          "raw_min_lp": 305,
+          "top_lp": 972,
+          "player_count": 500,
+          "clean_player_count": 387,
+          "floor_lp": 410
+        },
+        "master": {
+          "cutoff_lp": 0,
+          "raw_min_lp": 0,
+          "top_lp": 410,
+          "player_count": 2533,
+          "clean_player_count": 2533,
+          "floor_lp": null
+        }
+      }
+    }
   }
 ]

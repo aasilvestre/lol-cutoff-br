@@ -22,9 +22,23 @@ function fillCards(prefix, queueData) {
 }
 
 function drawChart(canvasId, history, queueKey, titleSuffix) {
+  const canvas = document.getElementById(canvasId);
+
+  if (typeof Chart === "undefined") {
+    canvas.replaceWith(
+      Object.assign(document.createElement("p"), {
+        className: "empty-state",
+        textContent:
+          "Não foi possível carregar a biblioteca de gráficos (Chart.js). Verifique sua conexão ou tente recarregar a página.",
+      })
+    );
+    console.error("Chart.js não carregou — window.Chart está indefinido.");
+    return;
+  }
+
   const labels = history.map((h) => formatDate(h.timestamp_brt));
 
-  const ctx = document.getElementById(canvasId).getContext("2d");
+  const ctx = canvas.getContext("2d");
   new Chart(ctx, {
     type: "line",
     data: {
@@ -82,6 +96,10 @@ function drawChart(canvasId, history, queueKey, titleSuffix) {
   document.getElementById("last-update").textContent =
     `Última atualização: ${new Date(latest.timestamp_brt).toLocaleString("pt-BR")} (horário de Brasília)`;
 
-  drawChart("soloChart", history, "solo", "Solo/Duo BR");
-  drawChart("flexChart", history, "flex", "Flex BR");
+  try {
+    drawChart("soloChart", history, "solo", "Solo/Duo BR");
+    drawChart("flexChart", history, "flex", "Flex BR");
+  } catch (err) {
+    console.error("Erro ao desenhar os gráficos:", err);
+  }
 })();

@@ -233,5 +233,52 @@
         "total_apex_players": 3386
       }
     }
+  },
+  {
+    "timestamp_utc": "2026-07-27T06:13:37.310075+00:00",
+    "timestamp_brt": "2026-07-27T03:13:37.310075-03:00",
+    "date_brt": "2026-07-27",
+    "queues": {
+      "solo": {
+        "challenger": {
+          "cutoff_lp": 1914,
+          "top_lp": 3590,
+          "player_count": 200,
+          "target_size": 200
+        },
+        "grandmaster": {
+          "cutoff_lp": 1264,
+          "top_lp": 1913,
+          "player_count": 500,
+          "target_size": 500
+        },
+        "master": {
+          "cutoff_lp": 0,
+          "top_lp": 1324,
+          "player_count": 8780
+        },
+        "total_apex_players": 9498
+      },
+      "flex": {
+        "challenger": {
+          "cutoff_lp": 1027,
+          "top_lp": 2682,
+          "player_count": 200,
+          "target_size": 200
+        },
+        "grandmaster": {
+          "cutoff_lp": 385,
+          "top_lp": 1024,
+          "player_count": 500,
+          "target_size": 500
+        },
+        "master": {
+          "cutoff_lp": 0,
+          "top_lp": 587,
+          "player_count": 2745
+        },
+        "total_apex_players": 3445
+      }
+    }
   }
 ]

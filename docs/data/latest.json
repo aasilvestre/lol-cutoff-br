@@ -1,47 +1,47 @@
 {
-  "timestamp_utc": "2026-08-13T04:31:21.414031+00:00",
-  "timestamp_brt": "2026-08-13T01:31:21.414031-03:00",
-  "date_brt": "2026-08-13",
+  "timestamp_utc": "2026-08-14T04:30:05.052462+00:00",
+  "timestamp_brt": "2026-08-14T01:30:05.052462-03:00",
+  "date_brt": "2026-08-14",
   "queues": {
     "solo": {
       "challenger": {
-        "cutoff_lp": 1976,
+        "cutoff_lp": 1975,
         "top_lp": 3826,
         "player_count": 200,
         "target_size": 200
       },
       "grandmaster": {
-        "cutoff_lp": 1286,
-        "top_lp": 1975,
+        "cutoff_lp": 1290,
+        "top_lp": 1972,
         "player_count": 500,
         "target_size": 500
       },
       "master": {
         "cutoff_lp": 0,
-        "top_lp": 1335,
-        "player_count": 8554
+        "top_lp": 1364,
+        "player_count": 8525
       },
-      "total_apex_players": 9254
+      "total_apex_players": 9225
     },
     "flex": {
       "challenger": {
-        "cutoff_lp": 941,
-        "top_lp": 2822,
+        "cutoff_lp": 929,
+        "top_lp": 2847,
         "player_count": 200,
         "target_size": 200
       },
       "grandmaster": {
         "cutoff_lp": 337,
-        "top_lp": 941,
+        "top_lp": 926,
         "player_count": 500,
         "target_size": 500
       },
       "master": {
         "cutoff_lp": 0,
-        "top_lp": 425,
-        "player_count": 2444
+        "top_lp": 393,
+        "player_count": 2416
       },
-      "total_apex_players": 3142
+      "total_apex_players": 3116
     }
   }
 }
